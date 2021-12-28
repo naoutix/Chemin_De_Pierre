@@ -1,4 +1,4 @@
-# PlaquageDeTexture
+# Chemin De Pierre
 Bienvenue dans le dojo du plaquage de texture
 
 Rapport 1: https://www.overleaf.com/project/61ae0c8853335a2cfb8fd00f
