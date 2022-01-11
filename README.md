@@ -1,6 +1,8 @@
 # Chemin De Pierre
 Bienvenue dans le dojo du plaquage de texture
+
 Github Supplementaire (Partie de léo tout le temps mis a jour !!): https://github.com/naoutix/PlaquageDeTexture.git
+
 # TUTO PARTIE 2 (episode 1,2,3) : https://www.youtube.com/watch?v=cNY2s5Kq9lE&list=PLUWxWDlz8PYLIG5w43tcZdaglQgXAQIPs
 PARTIE 1 :
 
