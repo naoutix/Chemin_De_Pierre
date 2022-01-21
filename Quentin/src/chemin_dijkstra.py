@@ -5,7 +5,7 @@ from gen_graph import gen_graph
 from utils import *
 from networkx.algorithms.shortest_paths.weighted import dijkstra_path
 
-points = np.loadtxt('terrain_3dpoints.txt')
+points = np.loadtxt("../data/terrain2_3dpoints.txt")
 G = gen_graph(points)
 
 shape = int(np.sqrt(points.shape[0]))
@@ -30,9 +30,13 @@ for node in node_list:
     x_list.append(u[0][0])
     y_list.append(u[1][0])
 
+np.save("../data/chemin.npy",np.array([x_list,y_list]))
+
 plt.figure()
 plt.imshow(np.reshape(points[:,2], (shape,shape)),cmap='terrain')
 plt.plot(depart[0],depart[1],'g*')
 plt.plot(fin[0],fin[1],'r*')
 plt.plot(x_list,y_list,'b-')
+plt.savefig("../data/chemin.png", dpi=150)
 plt.show()
+

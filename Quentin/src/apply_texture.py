@@ -3,14 +3,14 @@ import numpy as np
 from tvtk.api import tvtk
 from PIL import Image
 
-points = np.loadtxt("../data/terrain_3dpoints.txt")
+points = np.loadtxt("../data/terrain2_3dpoints.txt")
 shape = int(np.sqrt(points.shape[0]))
 
 x = np.reshape(points[:,0], (shape,shape))
 y = np.reshape(points[:,1], (shape,shape))
 z = np.reshape(points[:,2], (shape,shape))
 
-im = Image.open("../data/texture_map.png")
+im = Image.open("../data/texture_map_chemin.png")
 im2 = im.rotate(90)
 im2.save("../data/texture_map_90.png")
 

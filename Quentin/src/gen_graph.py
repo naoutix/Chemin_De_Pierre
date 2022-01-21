@@ -3,8 +3,9 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.drawing.nx_pydot import write_dot
 
-def gen_graph(points):
+def gen_graph(points, delta_max=.15):
     shape = int(np.sqrt(points.shape[0]))
+    sup = 10
 
     Zx = points[:,2]
     Zy = np.reshape(Zx,(shape,shape)).T.flatten()
@@ -14,8 +15,17 @@ def gen_graph(points):
 
     for i in range(shape):
         for j in range(shape-1):
-            edge_x[i,j] = abs(Zx[i*shape+j] - Zx[i*shape+j+1])
-            edge_y[i,j] = abs(Zy[i*shape+j] - Zy[i*shape+j+1])
+            dx = abs(Zx[i*shape+j] - Zx[i*shape+j+1])
+            if dx > delta_max:
+                edge_x[i, j] = sup
+            else:
+                edge_x[i, j] = dx
+
+            dy = abs(Zy[i*shape+j] - Zy[i*shape+j+1])
+            if dy > delta_max:
+                edge_y[i, j] = sup
+            else:
+                edge_y[i, j] = dy
 
     G = nx.Graph()
 
