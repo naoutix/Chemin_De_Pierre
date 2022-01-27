@@ -23,15 +23,15 @@ terrain = matplotlib_to_plotly(terrain_cmap, 255)
 """ Paramètres bruit """
 shape = (100,100)
 scale = 25.0
-octaves = 4
-persistence = 0.25
+octaves = 3
+persistence = 0.2
 lacunarity = 2.0
 
 """ Génération height map """
 world = np.zeros(shape)
 for i in range(shape[0]):
     for j in range(shape[1]):
-        world[i][j] = 10*noise.pnoise2(i/scale, 
+        world[i][j] = 10*noise.pnoise2(i/scale,
                                     j/scale, 
                                     octaves=octaves, 
                                     persistence=persistence, 
@@ -73,4 +73,4 @@ fig = go.Figure(data=[go.Surface(colorscale=terrain,z=world)])
 fig.update_layout(title='Random 3D Terrain')
 
 # Note that include_plotlyjs is used as cdn so that the static site generator can read it and present it on the browser. This is not typically required.
-html = plotly.offline.plot(fig, filename='3d-mesh2-plotly.html',include_plotlyjs='cdn')
+html = plotly.offline.plot(fig, filename='3d-mesh-flat-plotly.html',include_plotlyjs='cdn')

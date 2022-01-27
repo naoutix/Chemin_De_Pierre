@@ -10,7 +10,7 @@ x = np.reshape(points[:,0], (shape,shape))
 y = np.reshape(points[:,1], (shape,shape))
 z = np.reshape(points[:,2], (shape,shape))
 
-im = Image.open("../data/texture_map_chemin_test.png")
+im = Image.open("../data/texture_map_chemin_test-merge.pngcd Doc    ")
 im2 = im.rotate(90)
 im2.save("../data/texture_map_90.png")
 
