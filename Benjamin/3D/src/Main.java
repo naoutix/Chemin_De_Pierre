@@ -38,9 +38,9 @@ public class Main {
 
 
         try {
-            gs.toImages("L:/APP/testSet/mnt");
-            hs.toImages("L:/APP/testSet/path");
-            txm.toImages("L:/APP/testSet/pyr");
+            gs.toImages("mnt");
+            hs.toImages("path");
+            txm.toImages("pyr");
 
         } catch (IOException e) {
             e.printStackTrace();

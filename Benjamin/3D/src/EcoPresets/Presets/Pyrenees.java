@@ -82,7 +82,7 @@ public class Pyrenees implements EcoPreset {
         System.out.println(pente.getMin());
 
         try {
-            pente.toImage("L:/APP/pente");
+            pente.toImage("pente");
         } catch (IOException e) {
             e.printStackTrace();
         }
