@@ -2,10 +2,10 @@
 Bienvenue dans le dojo du plaquage de texture
 
 Github Supplementaire:
-- **Léo**:       https://github.com/naoutix/PlaquageDeTexture.git
-- **Benjamin** : https://github.com/BenjaminCoupry/GeoGen  
+- **[Léo](https://github.com/naoutix/)**: https://github.com/naoutix/PlaquageDeTexture.git
+- **[Benjamin](https://github.com/BenjaminCoupry/)** : https://github.com/BenjaminCoupry/GeoGen  
 
-Diapo1 : https://docs.google.com/presentation/d/1IkIVrF--LcNEU5mPC5R7T3Ra6WYOus6l-YH3rk2IHhc/edit#slide=id.g10bb9196d25_0_0
+Diapo1 : https://docs.google.com/presentation/d/1IkIVrF--LcNEU5mPC5R7T3Ra6WYOus6l-YH3rk2IHhc/edit#slide=id.g10bb9196d25_0_0  
 Diapo2 : https://docs.google.com/presentation/d/1fKxdaK1dGF2nwMzsvcgNm8bE_h8z6WOxYnt-td3aOTI/edit#slide=id.p  
 
 PARTIE 1 :
